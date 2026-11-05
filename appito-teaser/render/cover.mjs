@@ -1,0 +1,24 @@
+// Renders video/cover.html → out/cover.png and out/cover.jpg (1080×1920), plus a 270×480 check.
+import http from 'node:http';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { createRequire } from 'node:module';
+import { execFileSync } from 'node:child_process';
+const require = createRequire(import.meta.url);
+const { chromium } = require('playwright');
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const MIME = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.png': 'image/png', '.webp': 'image/webp', '.svg': 'image/svg+xml', '.woff2': 'font/woff2' };
+const srv = http.createServer((q, r) => { const f = path.join(ROOT, decodeURIComponent(new URL(q.url, 'http://x').pathname)); if (!fs.existsSync(f) || fs.statSync(f).isDirectory()) { r.writeHead(404); return r.end(); } r.writeHead(200, { 'content-type': MIME[path.extname(f)] || 'application/octet-stream' }); fs.createReadStream(f).pipe(r); });
+await new Promise((res) => srv.listen(0, '127.0.0.1', res));
+const browser = await chromium.launch();
+const page = await browser.newPage({ viewport: { width: 1080, height: 1920 } });
+page.on('pageerror', (e) => console.error('pageerror', e.message));
+await page.goto(`http://127.0.0.1:${srv.address().port}/video/cover.html`);
+await page.waitForFunction(() => window.__ready === true);
+const png = path.join(ROOT, 'out', 'cover.png');
+await page.screenshot({ path: png });
+await browser.close(); srv.close();
+execFileSync('convert', [png, '-quality', '92', path.join(ROOT, 'out', 'cover.jpg')]);
+execFileSync('convert', [png, '-resize', '270x480', path.join(ROOT, 'out', 'probe', 'cover-270.png')]);
+console.log('cover written');

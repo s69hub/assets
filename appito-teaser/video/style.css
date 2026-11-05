@@ -1,0 +1,69 @@
+@font-face {
+  font-family: Vazirmatn;
+  src: url(assets/fonts/vazirmatn-arabic.woff2) format("woff2");
+  font-weight: 100 900;
+  font-display: block;
+  unicode-range: U+0600-06FF, U+200C-200E, U+FB50-FDFF, U+FE70-FEFF;
+}
+@font-face {
+  font-family: Vazirmatn;
+  src: url(assets/fonts/vazirmatn-latin.woff2) format("woff2");
+  font-weight: 100 900;
+  font-display: block;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: #0b0a24; }
+body {
+  font-family: Vazirmatn, "Noto Color Emoji", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #fff;
+  font-feature-settings: "ss01" 0;
+}
+#stage { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; overflow: hidden; background: #0b0a24; }
+.scene { position: absolute; inset: 0; overflow: hidden; }
+.abs { position: absolute; left: 0; top: 0; }
+img { display: block; }
+.ic { display: block; flex-shrink: 0; }
+
+/* ── world ─────────────────────────────────────────────── */
+.world { position: absolute; inset: 0; overflow: hidden; background: #0b0a24; }
+.world .base { position: absolute; inset: 0; }
+.world .neb { position: absolute; left: -10%; top: -5%; width: 120%; height: 110%; object-fit: cover; mix-blend-mode: screen; }
+.world .glow { position: absolute; width: 1400px; height: 1400px; border-radius: 50%; }
+.grain { position: absolute; inset: -64px; pointer-events: none; mix-blend-mode: overlay; opacity: .09; }
+.vignette { position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(120% 80% at 50% 45%, rgba(0,0,0,0) 55%, rgba(5,4,20,.55) 100%); }
+
+/* ── headline ──────────────────────────────────────────── */
+.hl { position: absolute; left: 140px; right: 140px; text-align: center; direction: rtl; }
+.hl1 { font-weight: 800; line-height: 1.35; margin-bottom: 6px; }
+.hl2 { font-weight: 900; line-height: 1.22; color: #fff; text-wrap: balance; }
+.hl:not(.noshadow) .hl2 { text-shadow: 0 6px 30px rgba(10, 6, 40, .55); }
+.green { color: #01c457; }
+.lil { color: #cdbfff; }
+.grad { background: linear-gradient(to left, #ffffff 0%, #e4dbff 35%, #a488ff 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+/* ── pointer ───────────────────────────────────────────── */
+.ptr { position: absolute; left: 0; top: 0; width: 64px; height: 64px; filter: drop-shadow(0 6px 12px rgba(0,0,0,.45)); z-index: 50; }
+.ptr-ring { position: absolute; left: 0; top: 0; width: 100px; height: 100px; border-radius: 50%; border: 5px solid rgba(255,255,255,.95); box-shadow: 0 0 30px rgba(164,136,255,.9); z-index: 49; }
+
+/* ── glass plate (series cover kit) ───────────────────── */
+.plate { position: absolute; direction: rtl; text-align: center; padding: 34px 54px 40px; border-radius: 44px;
+  background: linear-gradient(160deg, rgba(31, 27, 92, .86), rgba(19, 20, 67, .92));
+  box-shadow: inset 0 0 0 2.5px rgba(164, 136, 255, .75), 0 30px 80px -20px rgba(8, 4, 40, .9), 0 0 60px rgba(122,77,255,.25);
+  backdrop-filter: blur(18px); }
+
+/* ── chat & UI ─────────────────────────────────────────── */
+.ui { direction: rtl; color: #0b0a24; }
+.card { background: #fff; border-radius: 30px; box-shadow: 0 24px 60px -24px rgba(8, 4, 40, .65), 0 2px 0 rgba(255,255,255,.6) inset; }
+.pill { display: inline-flex; align-items: center; gap: 12px; border-radius: 999px; }
+.chip { display: inline-flex; align-items: center; gap: 10px; border-radius: 999px; padding: 10px 22px; font-weight: 800; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; border-radius: 18px; font-weight: 800; }
+.shimmer { background: linear-gradient(90deg, #ece8fb 0%, #f7f5ff 40%, #ece8fb 80%); background-size: 300% 100%; border-radius: 10px; }
+
+/* ── phone ─────────────────────────────────────────────── */
+.phone { position: absolute; border-radius: 74px; background: #08071a;
+  box-shadow: 0 0 0 3px #2a2668, 0 0 0 12px #121034, 0 60px 120px -30px rgba(0,0,0,.85), 0 0 120px rgba(122,77,255,.35); }
+.phone .screen { position: absolute; overflow: hidden; border-radius: 62px; background: #fff; }
+.phone .island { position: absolute; left: 50%; top: 22px; width: 150px; height: 40px; margin-left: -75px; border-radius: 30px; background: #000; z-index: 20; }

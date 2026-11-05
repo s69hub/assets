@@ -1,0 +1,7 @@
+# render intermediates (rebuild with render/render.mjs)
+out/chunks/
+out/probe/
+out/picture.mp4
+__pycache__/
+out/fix-*.mp4
+out/chunks-*/

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>Appito teaser — cover</title>
+<!--
+  The reel's cover, in the series' cover kit (Ads/REMOTION.md §9): the neon violet world, frame 0's
+  navy glass plate with one word in green, four-point sparkles, the mascot on a glow, a gold device
+  (here a gold «تو فقط بگو…» tag), the white «appito» wordmark below the 3:4 crop (y 240–1680).
+  This cover's own scene: the customers' «قیمت؟» bubbles orbit the mascot's glow.
+-->
+<link rel="stylesheet" href="style.css">
+<style>
+  #c { position:absolute; inset:0; overflow:hidden;
+       background: radial-gradient(90% 60% at 50% 52%, #4b2bd0 0%, #24157a 45%, #0b0a24 100%); }
+  .neb { position:absolute; inset:-5%; width:110%; height:110%; object-fit:cover; opacity:.35; mix-blend-mode:screen; }
+  .glow { position:absolute; left:540px; top:1060px; width:1000px; height:1000px; margin:-500px 0 0 -500px; border-radius:50%;
+          background: radial-gradient(closest-side, rgba(205,191,255,.85) 0%, rgba(122,77,255,.55) 40%, rgba(122,77,255,0) 100%); }
+  .ring { position:absolute; left:540px; top:1060px; width:640px; height:640px; margin:-320px 0 0 -320px; border-radius:50%;
+          box-shadow: 0 0 0 4px rgba(230,222,255,.8), 0 0 70px 14px rgba(164,136,255,.75), inset 0 0 70px rgba(164,136,255,.6); }
+  .masc { position:absolute; left:220px; top:740px; width:640px; height:640px; }
+  .plate { left:50%; top:300px; transform:translateX(-50%); }
+  .plate div { font-size:96px; font-weight:900; line-height:1.16; color:#fff; white-space:nowrap; }
+  .gold { position:absolute; left:50%; top:600px; transform:translateX(-50%) rotate(-3deg); padding:14px 40px; border-radius:999px; direction:rtl;
+          background:linear-gradient(160deg,#2a1d06,#120c02); box-shadow: inset 0 0 0 3px #f6c453, 0 0 40px rgba(246,196,83,.55), 0 14px 30px rgba(0,0,0,.5); }
+  .gold span { font-size:54px; font-weight:900; background:linear-gradient(to left,#fff3c4,#f6c453 45%,#d4912a); -webkit-background-clip:text; background-clip:text; color:transparent; white-space:nowrap; }
+  .bub { position:absolute; display:flex; align-items:center; gap:12px; direction:rtl; padding:14px 24px 14px 16px; background:#fff; color:#0b0a24; border-radius:28px;
+         font-size:36px; font-weight:800; white-space:nowrap; box-shadow:0 16px 36px -12px rgba(6,4,30,.7); }
+  .bub i { width:46px; height:46px; border-radius:50%; display:grid; place-items:center; color:#fff; font-style:normal; font-size:24px; font-weight:900; }
+  .sp { position:absolute; width:70px; height:70px; }
+  .wm { position:absolute; left:50%; top:1740px; width:380px; transform:translateX(-50%); }
+</style>
+</head>
+<body>
+<div id="stage"><div id="c">
+  <img class="neb" src="assets/ui/nebula.webp">
+  <div class="glow"></div><div class="ring"></div>
+  <img class="masc" src="assets/mascot/m-waving-hello.png">
+  <div class="plate"><div>هنوز توی <span class="green">دایرکت</span></div><div>می‌فروشی؟</div></div>
+  <div class="gold"><span>تو فقط بگو…</span></div>
+  <img class="wm" src="assets/brand/appito-white.svg">
+</div></div>
+<script type="module">
+  import { sparkleSVG } from './kit.js';
+  const c = document.getElementById('c');
+  const bubbles = [
+    ['قیمت؟', '#ff7a59', 'م', 150, 860, -8], ['موجوده؟', '#2fb6a3', 'س', 700, 820, 7], ['قیمت؟', '#7a4dff', 'ر', 760, 1250, -6],
+    ['سایز ۳۸ دارین؟', '#f2b134', 'ن', 120, 1330, 5], ['قیمت؟', '#e2557c', 'ز', 640, 1470, 9], ['قیمت؟', '#3c8cf0', 'ک', 230, 1530, -10],
+  ];
+  for (const [t, col, ini, x, y, r] of bubbles) {
+    const b = document.createElement('div'); b.className = 'bub';
+    b.innerHTML = `<i style="background:${col}">${ini}</i>${t}`;
+    Object.assign(b.style, { left: x + 'px', top: y + 'px', transform: `rotate(${r}deg)` });
+    c.appendChild(b);
+  }
+  const sp = [[180, 700, 1], [890, 690, .7], [960, 1080, .9], [90, 1120, .6], [500, 1650, .7], [860, 1600, .55], [300, 260, .5], [800, 250, .6]];
+  for (const [x, y, s] of sp) {
+    const e = document.createElement('div'); e.className = 'sp'; e.innerHTML = sparkleSVG(s > .8 ? '#ffe9a8' : '#fff');
+    Object.assign(e.style, { left: x + 'px', top: y + 'px', transform: `scale(${s})` });
+    c.appendChild(e);
+  }
+  await document.fonts.load('900 80px Vazirmatn', 'دایرکت');
+  await document.fonts.ready;
+  await Promise.all([...document.images].map((i) => i.decode().catch(() => {})));
+  window.__ready = true;
+</script>
+</body>
+</html>

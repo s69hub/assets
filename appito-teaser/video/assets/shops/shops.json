@@ -1,0 +1,342 @@
+[
+ {
+  "id": "saffron-crimson",
+  "name": "زعفران سرخ",
+  "tpl": "gallery",
+  "heroTitle": "زعفران سرگل قائنات",
+  "tagline": "از مزرعه تا آشپزخانهٔ شما",
+  "products": [
+   {
+    "name": "زعفران رشته‌ای",
+    "price": "۱٬۸۵۰٬۰۰۰ تومان",
+    "img": "../public/img/gen/saffron-crimson/p1.webp"
+   },
+   {
+    "name": "زعفران سرگل نیم مثقالی",
+    "price": "۹۸۰٬۰۰۰ تومان",
+    "img": "../public/img/gen/saffron-crimson/p2.webp"
+   },
+   {
+    "name": "پیمانهٔ برنجی زعفران",
+    "price": "۲٬۴۰۰٬۰۰۰ تومان",
+    "img": "../public/img/gen/saffron-crimson/p3.webp"
+   }
+  ],
+  "palette": {
+   "bg": "#20091E",
+   "surface": "#351636",
+   "ink": "#FFF3E0",
+   "accent": "#E62E1B"
+  },
+  "hero": "../public/img/gen/saffron-crimson/hero.webp"
+ },
+ {
+  "id": "lalejin-turquoise-pottery",
+  "name": "لالجین آبی",
+  "tpl": "bazaar",
+  "banner": "سفال دست‌ساز لالجین، مستقیم از کارگاه",
+  "cats": [
+   "گلدان",
+   "کاسه و بشقاب",
+   "سرویس چای",
+   "دکوری"
+  ],
+  "band": "مجموعهٔ فیروزه‌ای",
+  "products": [
+   {
+    "name": "گلدان لعاب فیروزه‌ای",
+    "price": "۱٬۲۵۰٬۰۰۰ تومان",
+    "img": "../public/img/gen/lalejin-turquoise-pottery/p1.webp"
+   },
+   {
+    "name": "کاسه‌های لعابی",
+    "price": "۸۹۰٬۰۰۰ تومان",
+    "img": "../public/img/gen/lalejin-turquoise-pottery/p2.webp"
+   },
+   {
+    "name": "سرویس چای سفالی",
+    "price": "۲٬۱۵۰٬۰۰۰ تومان",
+    "img": "../public/img/gen/lalejin-turquoise-pottery/p3.webp"
+   }
+  ],
+  "palette": {
+   "bg": "#F6EFE3",
+   "surface": "#FFFFFF",
+   "ink": "#123B4F",
+   "accent": "#00A8B5"
+  },
+  "hero": "../public/img/gen/lalejin-turquoise-pottery/hero.webp"
+ },
+ {
+  "id": "neyshabur-turquoise-silver",
+  "name": "فیروزهٔ نیشابور",
+  "tpl": "gallery",
+  "heroTitle": "نقره و فیروزهٔ شجری",
+  "tagline": "هر سنگ، یک نقش یگانه",
+  "products": [
+   {
+    "name": "انگشتر نقره فیروزه",
+    "price": "۴٬۲۰۰٬۰۰۰ تومان",
+    "img": "../public/img/gen/neyshabur-turquoise-silver/p1.webp"
+   },
+   {
+    "name": "گوشوارهٔ فیروزه",
+    "price": "۳٬۱۰۰٬۰۰۰ تومان",
+    "img": "../public/img/gen/neyshabur-turquoise-silver/p2.webp"
+   },
+   {
+    "name": "گردنبند فیروزه",
+    "price": "۳٬۶۵۰٬۰۰۰ تومان",
+    "img": "../public/img/gen/neyshabur-turquoise-silver/p3.webp"
+   }
+  ],
+  "palette": {
+   "bg": "#071A24",
+   "surface": "#0E2E3D",
+   "ink": "#EAF6F5",
+   "accent": "#2DD4BF"
+  },
+  "hero": "../public/img/gen/neyshabur-turquoise-silver/hero.webp"
+ },
+ {
+  "id": "yazd-termeh",
+  "name": "ترمه یزد",
+  "tpl": "bazaar",
+  "banner": "ترمهٔ دست‌باف یزد، هدیه‌ای ماندگار",
+  "cats": [
+   "رومیزی",
+   "پارچه",
+   "کوسن",
+   "هدیه"
+  ],
+  "band": "ترمه‌های تازه",
+  "products": [
+   {
+    "name": "ترمهٔ بته‌جقه",
+    "price": "۲٬۷۵۰٬۰۰۰ تومان",
+    "img": "../public/img/gen/yazd-termeh/p1.webp"
+   },
+   {
+    "name": "رومیزی ترمه",
+    "price": "۱٬۹۸۰٬۰۰۰ تومان",
+    "img": "../public/img/gen/yazd-termeh/p2.webp"
+   },
+   {
+    "name": "ترمهٔ موج",
+    "price": "۲٬۳۵۰٬۰۰۰ تومان",
+    "img": "../public/img/gen/yazd-termeh/p3.webp"
+   }
+  ],
+  "palette": {
+   "bg": "#FBF3E4",
+   "surface": "#FFF9EE",
+   "ink": "#4A1220",
+   "accent": "#C19A3D"
+  },
+  "hero": "../public/img/gen/yazd-termeh/hero.webp"
+ },
+ {
+  "id": "attar-oud",
+  "name": "عود و عنبر",
+  "tpl": "gallery",
+  "heroTitle": "عطرهای دست‌ساز عود",
+  "tagline": "رایحه‌ای از شب‌های شرق",
+  "products": [
+   {
+    "name": "عطر عود کهربایی",
+    "price": "۳٬۹۰۰٬۰۰۰ تومان",
+    "img": "../public/img/gen/attar-oud/p1.webp"
+   },
+   {
+    "name": "عطر گل محمدی",
+    "price": "۲٬۶۰۰٬۰۰۰ تومان",
+    "img": "../public/img/gen/attar-oud/p2.webp"
+   },
+   {
+    "name": "ست سه‌تایی عطر",
+    "price": "۷٬۴۰۰٬۰۰۰ تومان",
+    "img": "../public/img/gen/attar-oud/p3.webp"
+   }
+  ],
+  "palette": {
+   "bg": "#0D0906",
+   "surface": "#1C130C",
+   "ink": "#F3E5C8",
+   "accent": "#D99A2B"
+  },
+  "hero": "../public/img/gen/attar-oud/hero.webp"
+ },
+ {
+  "id": "tea-copper-samovar",
+  "name": "سماور مسی",
+  "tpl": "gallery",
+  "heroTitle": "سماور مسی دست‌ساز",
+  "tagline": "چای تازه‌دم، مثل قدیم‌ها",
+  "products": [
+   {
+    "name": "ست استکان و نعلبکی",
+    "price": "۱٬۴۵۰٬۰۰۰ تومان",
+    "img": "../public/img/gen/tea-copper-samovar/p1.webp"
+   },
+   {
+    "name": "قوری مسی",
+    "price": "۳٬۳۰۰٬۰۰۰ تومان",
+    "img": "../public/img/gen/tea-copper-samovar/p2.webp"
+   },
+   {
+    "name": "سینی چای مسی",
+    "price": "۲٬۲۰۰٬۰۰۰ تومان",
+    "img": "../public/img/gen/tea-copper-samovar/p3.webp"
+   }
+  ],
+  "palette": {
+   "bg": "#140E0B",
+   "surface": "#241812",
+   "ink": "#FBEEDC",
+   "accent": "#E07A2C"
+  },
+  "hero": "../public/img/gen/tea-copper-samovar/hero.webp"
+ },
+ {
+  "id": "mountain-honey",
+  "name": "عسل کوهستان",
+  "tpl": "bazaar",
+  "banner": "عسل طبیعی، تازه از کندوهای سبلان",
+  "cats": [
+   "عسل آویشن",
+   "شان عسل",
+   "عسل گون",
+   "ست هدیه"
+  ],
+  "band": "تازه از کندو",
+  "products": [
+   {
+    "name": "عسل آویشن کوهی",
+    "price": "۸۹۰٬۰۰۰ تومان",
+    "img": "../public/img/gen/mountain-honey/p1.webp"
+   },
+   {
+    "name": "شان عسل طبیعی",
+    "price": "۱٬۱۵۰٬۰۰۰ تومان",
+    "img": "../public/img/gen/mountain-honey/p2.webp"
+   },
+   {
+    "name": "ست سه‌تایی عسل",
+    "price": "۲٬۴۰۰٬۰۰۰ تومان",
+    "img": "../public/img/gen/mountain-honey/p3.webp"
+   }
+  ],
+  "palette": {
+   "bg": "#FFF6DB",
+   "surface": "#FFFBEB",
+   "ink": "#4A2A00",
+   "accent": "#F2A900"
+  },
+  "hero": "../public/img/gen/mountain-honey/hero.webp"
+ },
+ {
+  "id": "gaz-sohan-sweets",
+  "name": "گز و سوهان",
+  "tpl": "bazaar",
+  "banner": "سوغات اصفهان و قم، تازه و خوش‌طعم",
+  "cats": [
+   "گز",
+   "سوهان",
+   "نقل و شیرینی",
+   "جعبهٔ هدیه"
+  ],
+  "band": "شیرینی‌های تازه",
+  "products": [
+   {
+    "name": "گز پسته‌ای",
+    "price": "۶۸۰٬۰۰۰ تومان",
+    "img": "../public/img/gen/gaz-sohan-sweets/p1.webp"
+   },
+   {
+    "name": "سوهان زعفرانی",
+    "price": "۵۴۰٬۰۰۰ تومان",
+    "img": "../public/img/gen/gaz-sohan-sweets/p2.webp"
+   },
+   {
+    "name": "سینی شیرینی سنتی",
+    "price": "۱٬۲۵۰٬۰۰۰ تومان",
+    "img": "../public/img/gen/gaz-sohan-sweets/p3.webp"
+   }
+  ],
+  "palette": {
+   "bg": "#FFF0F3",
+   "surface": "#FFFFFF",
+   "ink": "#4D2233",
+   "accent": "#E86A92"
+  },
+  "hero": "../public/img/gen/gaz-sohan-sweets/hero.webp"
+ },
+ {
+  "id": "persian-greenhouse",
+  "name": "گلخانه سبز",
+  "tpl": "gallery",
+  "heroTitle": "مونسترا در گلدان سفالی",
+  "tagline": "یک تکه جنگل، برای خانهٔ شما",
+  "products": [
+   {
+    "name": "فیکوس در گلدان فیروزه‌ای",
+    "price": "۱٬۳۵۰٬۰۰۰ تومان",
+    "img": "../public/img/gen/persian-greenhouse/p1.webp"
+   },
+   {
+    "name": "ست سه‌تایی گیاه",
+    "price": "۲٬۱۰۰٬۰۰۰ تومان",
+    "img": "../public/img/gen/persian-greenhouse/p2.webp"
+   },
+   {
+    "name": "مونسترا در گلدان آبی",
+    "price": "۱٬۸۹۰٬۰۰۰ تومان",
+    "img": "../public/img/gen/persian-greenhouse/p3.webp"
+   }
+  ],
+  "palette": {
+   "bg": "#07150E",
+   "surface": "#0F2A1A",
+   "ink": "#EAF7EC",
+   "accent": "#7ED957"
+  },
+  "hero": "../public/img/gen/persian-greenhouse/hero.webp"
+ },
+ {
+  "id": "tehran-sneakers",
+  "name": "اسنیکر نو",
+  "tpl": "bazaar",
+  "banner": "کلکسیون تازهٔ پاییز رسید",
+  "cats": [
+   "روزمره",
+   "رانینگ",
+   "کلاسیک",
+   "لوازم"
+  ],
+  "band": "پرفروش‌های این هفته",
+  "products": [
+   {
+    "name": "کتانی سفید لیمویی",
+    "price": "۳٬۸۵۰٬۰۰۰ تومان",
+    "img": "../public/img/gen/tehran-sneakers/p1.webp"
+   },
+   {
+    "name": "کتانی فیروزه‌ای",
+    "price": "۴٬۲۵۰٬۰۰۰ تومان",
+    "img": "../public/img/gen/tehran-sneakers/p2.webp"
+   },
+   {
+    "name": "کتانی خاکستری",
+    "price": "۳٬۶۰۰٬۰۰۰ تومان",
+    "img": "../public/img/gen/tehran-sneakers/p3.webp"
+   }
+  ],
+  "palette": {
+   "bg": "#F2F2ED",
+   "surface": "#FFFFFF",
+   "ink": "#111111",
+   "accent": "#C6F135"
+  },
+  "hero": "../public/img/gen/tehran-sneakers/hero.webp"
+ }
+]
